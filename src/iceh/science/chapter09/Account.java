@@ -1,20 +1,26 @@
 package iceh.science.chapter09;
 
 public class Account {
-	private String numbur;
+	private String number;
+	private String name;
 	private int balance;
-	private double interestRate;
-	public Account(String numbur, int balance, double interestRate) {
+	public Account(String number, String name, int balance) {
 		super();
-		this.numbur = numbur;
+		this.number = number;
+		this.name = name;
 		this.balance = balance;
-		this.interestRate = interestRate;
 	}
-	public String getNumbur() {
-		return numbur;
+	public String getNumber() {
+		return number;
 	}
-	public void setNumbur(String numbur) {
-		this.numbur = numbur;
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getBalance() {
 		return balance;
@@ -22,13 +28,9 @@ public class Account {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
-	public double getInterestRate() {
-		return interestRate;
-	}
-	public void setInterestRate(double interestRate) {
-		this.interestRate = interestRate;
-	}
-	public int calculateInterest() { 
-		return (int)(this.balance + balance*interestRate );
+	public void openAccount() {
+		System.out.println("계좌를 개설합니다");
+		System.out.println("계좌변호 :" + this.number);
+		System.out.println("예급주");
 	}
 }
