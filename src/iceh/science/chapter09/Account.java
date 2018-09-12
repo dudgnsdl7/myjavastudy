@@ -4,6 +4,9 @@ public class Account {
 	private String number;
 	private String name;
 	private int balance;
+
+	
+	
 	public Account(String number, String name, int balance) {
 		super();
 		this.number = number;
@@ -30,7 +33,5 @@ public class Account {
 	}
 	public void openAccount() {
 		System.out.println("계좌를 개설합니다");
-		System.out.println("계좌변호 :" + this.number);
-		System.out.println("예급주");
 	}
 }
